@@ -49,7 +49,7 @@ header nav ul li a:hover{
 /*This helps make the links color white and with no underline*/
 a{
     color: black;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 p {
@@ -81,19 +81,19 @@ the bottom left corner of the banner*/
 }
 
 section{
-display: flex;
-flex-direction: column;
-flex-wrap: wrap;
-padding: 20px;
-margin: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin: 10px;
 }
 
 /*this helps create a padding and margin around title*/
 .sectionDetail{
-margin: 20px auto;
-padding-bottom: 50px;
-width: 100%;
-display: flex;
+    margin: 20px auto;
+    padding-bottom: 50px;
+    width: 100%;
+    display: flex;
 }
 
 /* this allows each section title to be a certain format */
@@ -127,4 +127,43 @@ display: flex;
     line-height: 1.5;
     margin-left: 30px;
     width: 100%;
+}
+
+/*these classes will be for the work section/container*/
+
+.border2{
+    border-left: 3px solid blue;
+    height: 400px;
+    flex: 2 5%;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 0 60%;
+}
+
+/*this section will help display and organize the contact section*/
+.contact{
+    flex: 150;
+}
+.contact ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: left;
+    list-style: none;
+    margin-left: 15px;
+    width: 100%;
+
+}
+.contact ul li{
+    display: inline-block;
+}
+.contact ul li a {
+    margin: 0 30px;
+    font-size: 20px;
+    text-decoration: none;
+    border-bottom: 3px solid;
+    padding-bottom: 2px;
 }
