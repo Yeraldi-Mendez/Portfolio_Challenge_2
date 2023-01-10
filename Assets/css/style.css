@@ -5,14 +5,14 @@
 }
 
 body{
-    background-color: grey;
+    background-color: lightblue;
 }
 
 header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: dimgray;
-    color: whitesmoke;
+    background-color: lightblue;
+    color: black;
 }
 
 header h1{
@@ -40,15 +40,21 @@ header nav ul li{
     margin-left: 25px;
 }
 
+header nav ul li a:hover{
+    background-color: blue;
+    color: whitesmoke;
+    border-radius: 15px;
+    text-shadow: none;
+}
 /*This helps make the links color white and with no underline*/
 a{
-    color: white;
+    color: black;
     text-decoration: none;
 }
 
 p {
     font-size: 16px;
-    color: bisque;
+    color: black;
 }
 
 /*This class is to allow a full width banner on the website*/
@@ -56,7 +62,7 @@ p {
     height: 250px;
     width: 100%;
     margin-bottom: 25px;
-    background-image: url("../images/blueCloud.jpg");
+    background-image: url("../images/banner-background-without-image-min.jpg");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -70,6 +76,55 @@ the bottom left corner of the banner*/
 .hero h2{
     font-style:inherit;
     font-size: 50px;
-    color: lightblue;
+    color: black;
     margin-top: 180px;
+}
+
+section{
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+padding: 20px;
+margin: 10px;
+}
+
+/*this helps create a padding and margin around title*/
+.sectionDetail{
+margin: 20px auto;
+padding-bottom: 50px;
+width: 100%;
+display: flex;
+}
+
+/* this allows each section title to be a certain format */
+.sectionTitle{
+    font-size: 40px;
+    display: inline-block;
+    border-right: 5px;
+    margin-right: 35px;
+    text-align: right;
+    padding: 0px;
+    flex-basis: 25%;
+}
+
+/*this is for the border that separates the title from text*/
+.border1 {
+   border-left: 3px solid blue;
+   height: 150px;
+   flex: 2 1%;
+}
+
+/*the text will have a flex of 25px*/
+.text{
+    flex: 25px;
+}
+
+
+/*this allows the paragraph to be in certain format*/
+.text p{
+    font-size: 20px;
+    text-align: left;
+    line-height: 1.5;
+    margin-left: 30px;
+    width: 100%;
 }
