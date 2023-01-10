@@ -100,49 +100,56 @@ section{
 .sectionTitle{
     font-size: 40px;
     display: inline-block;
-    border-right: 5px;
+    border-right: 5px solid;
     margin-right: 35px;
     text-align: right;
-    padding: 0px;
+    padding: 30px;
     flex-basis: 25%;
 }
 
-/*this is for the border that separates the title from text*/
-.border1 {
-   border-left: 3px solid blue;
-   height: 150px;
-   flex: 2 1%;
-}
-
-/*the text will have a flex of 25px*/
-.text{
-    flex: 25px;
-}
-
-
 /*this allows the paragraph to be in certain format*/
-.text p{
-    font-size: 20px;
+.text{
+   flex: 25;
+}
+
+.text a{
+    font-size: 15px;
     text-align: left;
-    line-height: 1.5;
-    margin-left: 30px;
-    width: 100%;
+    list-style: 2px;
+    margin-left: 15px;
+    width: 100%;    
 }
 
-/*these classes will be for the work section/container*/
-
-.border2{
-    border-left: 3px solid blue;
-    height: 400px;
-    flex: 2 5%;
-}
-
+/*These classes will help organize the work section*/
 .container{
     display: flex;
-    flex-wrap: wrap;
-    flex: 0 0 60%;
+    flex-direction: column;
+
 }
 
+.projectDetail{
+    position: relative;
+    margin-right: 12px;
+    width: max-content;
+}
+
+img{
+    border: 5px solid aqua;
+}
+
+.projectDetail a img:hover{
+    opacity: 0.5;
+}
+
+.projectTitle{
+    display: inline-block;
+    margin-right: 35px;
+    font-size: 20px;
+    color: white;
+    border: solid 1px black;
+    background-color: blue;
+
+}
 /*this section will help display and organize the contact section*/
 .contact{
     flex: 150;
@@ -166,4 +173,80 @@ section{
     text-decoration: none;
     border-bottom: 3px solid;
     padding-bottom: 2px;
+}
+
+/*media resizing*/
+@media screen and (max-width: 980px) {
+    header{
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header h1{
+        width: 100%;
+        text-align: center;
+        margin: 5px;
+    }
+    header nav ul li a{
+        font-size: 20px;
+    }
+
+    p{
+        flex: 2 100%;
+        text-align: left;
+        justify-content: left;
+    }
+}
+
+@media screen and (max-width 768px){
+    section {
+        padding: 30px 15px;
+        text-align: center;
+    }    
+
+    .sectionDetail{
+        flex-direction: column;
+    }
+
+    .sectionTitle{
+        font-size: 48px;
+        text-align: center;
+        flex-direction: column;
+        border-right: none;
+        border-bottom: 5px solid;
+        padding: 15px;
+        margin: 0;
+    }
+
+    p{
+        flex-direction: column;
+        justify-content: center;
+        display: contents;
+        padding: 10px;
+    }
+
+    .projectDetail{
+        flex:2 100%;
+        text-align: left;
+        justify-content: left;
+        display: flex;
+    }
+
+    .projectDetail img {
+        flex: 0 32%;
+        margin-right: 0;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        width: 90%;
+    }
+
+    a{
+        flex-direction: column;
+        justify-content: center;
+        display: contents;
+        padding: 10px;
+    }
 }
