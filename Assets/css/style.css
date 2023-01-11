@@ -130,7 +130,7 @@ section{
 .projectDetail{
     position: relative;
     margin-right: 12px;
-    width: max-content;
+    width: fit-content;
 }
 
 img{
@@ -144,6 +144,7 @@ img{
 .projectTitle{
     display: inline-block;
     margin-right: 35px;
+    margin-bottom: 10px;
     font-size: 20px;
     color: white;
     border: solid 1px black;
@@ -181,8 +182,6 @@ img{
         padding-bottom: 0;
         justify-content: center;
         position: relative;
-        flex-direction: column;
-        text-align: center;
     }
 
     header h1{
@@ -201,7 +200,7 @@ img{
     }
 }
 
-@media screen and (max-width 768px){
+@media screen and (max-width: 768px) {
     section {
         padding: 30px 15px;
         text-align: center;
