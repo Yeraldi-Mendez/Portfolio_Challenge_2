@@ -39,6 +39,7 @@ The following animation shows the web application's appearance and functionality
 
 ## Link to deployed application
 
+(https://yeraldi-mendez.github.io/Portfolio_Challenge_2/)
 
 
 
